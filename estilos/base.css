@@ -1,0 +1,204 @@
+/* ---------- Variáveis ---------- */
+:root {
+    --azul: #1d4e75;
+    --azul-escuro: #163a57;
+    --grafite: #2f2f2f;
+    --texto: #1f1f1f;
+    --borda: #cfd4d9;
+    --fundo: #ffffff;
+    --destaque: #ffe45c;
+    --fonte-titulo: "Montserrat Alternates", sans-serif;
+    --fonte-texto: "Lora", Georgia, serif;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+h1, h2, h3, header, nav, footer {
+    font-family: var(--fonte-titulo);
+}
+
+/* ---------- Header ---------- */
+header {
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+}
+
+#titulo-curso {
+    display: block;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+/* ---------- Navegação (Flex) ---------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--grafite);
+}
+
+nav a {
+    flex: 1;
+    padding: 0.7rem 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: var(--azul);
+    border-bottom-color: var(--destaque);
+    color: var(--destaque);
+    outline: none;
+}
+
+/* ---------- Main (centralizado, largura limitada, Grid) ---------- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    margin: 1.5rem 0 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+/* ---------- Cartões ---------- */
+.card {
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.6rem;
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.card-conteudo {
+    padding: 1.2rem;
+}
+
+/* Sobre mim */
+.foto-perfil {
+    float: right;
+    margin: 0 0 0.8rem 1rem;
+    border: 1px solid var(--borda);
+}
+
+.card h3 {
+    clear: both;
+    margin: 1rem auto 1.2rem;
+    padding-bottom: 0.3rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--borda);
+}
+
+figure {
+    float: left;
+    margin: 0 1rem 0.5rem 0;
+    width: 118px;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--borda);
+}
+
+figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.7rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.card-conteudo::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Recursos */
+#recursos ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+#recursos li {
+    margin-bottom: 0.4rem;
+}
+
+#recursos a {
+    color: #0000ee;
+}
+
+#recursos a:visited {
+    color: #551a8b;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+#ultimaModificacao {
+    color: var(--destaque);
+    font-size: 0.8rem;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        flex: 1 1 50%;
+    }
+}

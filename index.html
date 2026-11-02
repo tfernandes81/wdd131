@@ -1,16 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Tiago Fernandes</title>
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica. Tiago Fernandes. Página de perfil pessoal com HTML, CSS e JavaScript: apresentação, cidade, recursos de desenvolvimento web e links úteis.">
+    <meta name="author" content="Tiago Fernandes">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/base.css">
+
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
-
 <body>
-    <h1>Tiago Fernandes</h1> 
-    
-    <p>Software Developer</p>
-</body>
+    <header>
+        <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/tiagofernandes-tech/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=por" target="_blank" rel="noopener">Escritura</a>
+            <a href="#">Projeto Final</a>
+        </nav>
+    </header>
 
+    <main>
+        <h1>Tiago Fernandes</h1>
+
+        <section class="card" id="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <div class="card-conteudo">
+                <img class="foto-perfil" src="imagens/perfil.jpg" alt="Foto de perfil de Tiago Fernandes" width="100" height="130">
+                <p>
+                    Meu nome é Tiago Fernandes e moro em São Paulo, Brasil. Atualmente estou
+                    estudando desenvolvimento web e tecnologia. Gosto de aprender coisas novas,
+                    passar tempo com minha família e viajar. <!-- Edite este texto com a sua história -->
+                </p>
+
+                <h3>São Paulo, Brasil</h3>
+
+                <figure>
+                    <img src="imagens/bandeira.png" alt="Bandeira oficial do Brasil" width="118" height="80">
+                    <figcaption>Bandeira Oficial do Brasil</figcaption>
+                </figure>
+                <p>
+                    O Brasil é o maior país da América do Sul e o quinto maior do mundo em
+                    extensão. Abriga a maior parte da floresta amazônica e uma das maiores
+                    biodiversidades do planeta. É conhecido pela música, pela culinária e
+                    pela diversidade cultural.
+                </p>
+            </div>
+        </section>
+
+        <section class="card" id="recursos">
+            <h2>Recursos Web Dev</h2>
+            <div class="card-conteudo">
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank" rel="noopener">Comunidade Dev.to</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Revista Smashing</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+                    <li><a href="https://picsum.photos/" target="_blank" rel="noopener">Imagem de Espaço Reservado Lorem Picsum</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Tiago Fernandes 🌺 Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
 </html>
