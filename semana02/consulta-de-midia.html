@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131 - Exemplo de Consulta de Mídia</title>
-        <meta name="description" content="Página de exemplo da atividade de aprendizagem sobre consulta de mídia">
-        <meta name="author" content="Tiago Fernandes">
-    
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Mídia</title>
+  <meta name="description" content="Página simples que demonstra o uso de consultas de mídia CSS para aplicar estilos diferentes conforme a largura da janela de visualização.">
+  <meta name="author" content="Seu Nome">
+
+  <!-- Google Font: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos base (mobile first) -->
+  <link rel="stylesheet" href="estilos/consulta-de-midia.css">
+
+  <!-- Estilos para telas grandes: só aplicado quando a largura >= 700px -->
+  <link rel="stylesheet" href="estilos/consulta-de-midia-grande.css" media="(min-width: 700px)">
+</head>
+<body>
+  <header>
+    <h1>Consulta de Mídia</h1>
+  </header>
+
+  <main>
+    <p>Redimensione a janela do navegador para ver a mudança de estilo.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Seu Nome</p>
+  </footer>
+</body>
+</html>
