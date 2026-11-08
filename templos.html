@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Álbum do Templo</title>
+  <meta name="description" content="Álbum de fotos de templos ao redor do mundo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Mobile first: base primeiro, depois a folha para telas grandes -->
+  <link rel="stylesheet" href="estilos/templos.css">
+  <link rel="stylesheet" href="estilos/templos-grandes.css">
+  <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="logo">Álbum do Templo</p>
+    <button id="menu-btn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+    <nav>
+      <ul id="menu" class="menu">
+        <li><a href="templos.html">Página Inicial</a></li>
+        <li><a href="#antigo">Antigo</a></li>
+        <li><a href="#novo">Novo</a></li>
+        <li><a href="#grande">Grande</a></li>
+        <li><a href="#pequeno">Pequeno</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Página Inicial</h1>
+    <section class="galeria">
+      <figure><img src="imagens/templo1.svg" alt="Templo de San Diego, Califórnia" loading="lazy" width="400" height="250"><figcaption>San Diego Califórnia</figcaption></figure>
+      <figure><img src="imagens/templo2.svg" alt="Templo de Salt Lake City, Utah" loading="lazy" width="400" height="250"><figcaption>Salt Lake City Utah</figcaption></figure>
+      <figure><img src="imagens/templo3.svg" alt="Templo de Roma, Itália" loading="lazy" width="400" height="250"><figcaption>Roma Itália</figcaption></figure>
+      <figure><img src="imagens/templo4.svg" alt="Templo de Kyoto, Japão" loading="lazy" width="400" height="250"><figcaption>Kyoto Japão</figcaption></figure>
+      <figure><img src="imagens/templo5.svg" alt="Templo de São Paulo, Brasil" loading="lazy" width="400" height="250"><figcaption>São Paulo Brasil</figcaption></figure>
+      <figure><img src="imagens/templo6.svg" alt="Templo de Antananarivo, Madagascar" loading="lazy" width="400" height="250"><figcaption>Antananarivo Madagascar</figcaption></figure>
+      <figure><img src="imagens/templo7.svg" alt="Templo de Paris, França" loading="lazy" width="400" height="250"><figcaption>Paris França</figcaption></figure>
+      <figure><img src="imagens/templo8.svg" alt="Templo de Manti, Utah" loading="lazy" width="400" height="250"><figcaption>Manti Utah</figcaption></figure>
+      <figure><img src="imagens/templo9.svg" alt="Templo de Lisboa, Portugal" loading="lazy" width="400" height="250"><figcaption>Lisboa Portugal</figcaption></figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> 🚗 Tiago Fernandes 💻 Brasil</p>
+    <p id="ultima-modificacao"></p>
+  </footer>
+</body>
+</html>

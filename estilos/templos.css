@@ -1,0 +1,123 @@
+/* Mobile first */
+:root {
+  --azul: #1d4e75;
+  --azul-escuro: #143a58;
+  --amarelo: #ffd84d;
+  --texto: #1b1b1b;
+  --fundo: #ffffff;
+  --destaque: #1d4e75;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+/* Header */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--azul);
+  color: #fff;
+}
+
+.logo {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.menu-btn {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 .25rem;
+}
+.menu-btn:focus-visible, nav a:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 2px; }
+
+/* Nav: oculto no mobile até o clique */
+nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--azul-escuro);
+  z-index: 10;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu.aberto { display: flex; }
+
+nav a {
+  display: block;
+  padding: .9rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  transition: background-color .2s, color .2s;
+}
+nav a:hover { background: var(--amarelo); color: var(--azul-escuro); }
+
+/* Main: largura limitada e centralizada */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+/* Grid: 1 coluna no mobile */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure { margin: 0; text-align: center; }
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+figcaption {
+  margin-top: .4rem;
+  color: var(--destaque);
+  font-size: .95rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  background: var(--azul);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+footer p { margin: .3rem 0; }
+#ultima-modificacao { color: var(--amarelo); font-size: .85rem; }
