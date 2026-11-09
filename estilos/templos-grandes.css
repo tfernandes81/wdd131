@@ -1,0 +1,31 @@
+/* Visualização maior (a partir de 700px) */
+@media (min-width: 700px) {
+  .menu-btn { display: none; }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+  }
+
+  nav a {
+    border-bottom: 0;
+    padding: .5rem .8rem;
+    border-radius: 4px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .galeria { grid-template-columns: repeat(3, 1fr); }
+}
