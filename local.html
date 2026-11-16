@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasil | Local</title>
+  <meta name="description" content="Dados e clima do Brasil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/local.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Brasil</h1>
+  </header>
+
+  <main>
+    <figure class="hero">
+      <picture>
+        <source media="(min-width: 700px)" srcset="images/pao_acucar.webp" width="1200" height="600">
+        <img src="images/cristo.webp" width="480" height="640"
+             alt="Cenarios lindos do Brail">
+      </picture>
+    </figure>
+
+    <section class="data" aria-labelledby="data-title">
+      <h2 id="data-title">Data</h2>
+      <dl>
+        <dt>Area:</dt><dd>8,509,360.85 km²</dd>
+        <dt>Population:</dt><dd>214,211,951</dd>
+        <dt>Capital:</dt><dd>Brasília</dd>
+        <dt>Languages:</dt><dd>Portuguese</dd>
+        <dt>Currency:</dt><dd>Brazilian Real (BRL)</dd>
+        <dt>Time Zone:</dt><dd>UTC-3 (Brasília)</dd>
+        <dt>Calling Code:</dt><dd>+55</dd>
+        <dt>Internet TLD:</dt><dd>.br</dd>
+      </dl>
+    </section>
+
+    <section class="weather" aria-labelledby="weather-title">
+      <h2 id="weather-title">Weather</h2>
+      <img class="weather-icon" src="images/partly-cloudy.svg" width="64" height="64"
+           alt="Ícone de tempo parcialmente nublado">
+      <dl>
+        <dt>Temperature:</dt><dd><span id="temperatura">9</span> °C</dd>
+        <dt>Conditions:</dt><dd>Partly Cloudy</dd>
+        <dt>Wind:</dt><dd><span id="vento">12</span> km/h</dd>
+        <dt>Wind Chill:</dt><dd id="sensacao">N/A</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 🌿 Tiago Fernandes 🌿 Brasil</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

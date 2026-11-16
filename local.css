@@ -1,0 +1,108 @@
+:root {
+  --verde: #009c3b;
+  --amarelo: #ffdf00;
+  --azul: #002776;
+  --branco: #ffffff;
+  --fundo: #e6f4ea;
+  --texto: #1b1b1b;
+  --fonte: "Lato", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  color: var(--texto);
+  background-color: var(--fundo);
+}
+
+/* ---------- Mobile first ---------- */
+header {
+  background-color: var(--verde);
+  color: var(--branco);
+  text-align: center;
+  padding: 0.9rem 1rem;
+  border-bottom: 0.7rem solid var(--amarelo);
+}
+h1 { margin: 0; font-size: 1.5rem; }
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--branco);
+}
+
+.hero { margin: 0; }
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid var(--azul);
+}
+
+section { padding: 1rem; }
+section h2 {
+  margin: 0.5rem 0 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 0.8rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+dt { text-align: right; font-weight: 700; }
+dd { margin: 0; }
+
+.weather-icon { display: block; margin: 0 auto 1rem; }
+
+footer {
+  background-color: var(--azul);
+  color: var(--branco);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+footer p { margin: 0.2rem 0; }
+
+/* ---------- Tela larga ---------- */
+@media (min-width: 700px) {
+  header { padding: 1.2rem; }
+  h1 { font-size: 2.2rem; }
+
+  main {
+    position: relative;
+    max-width: none;
+    background: none;
+  }
+  .hero img { border: 0; height: 560px; object-fit: cover; }
+
+  section {
+    position: absolute;
+    width: 270px;
+    padding: 0 0 1rem;
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  section h2 {
+    margin: 0 0 1rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+    color: var(--branco);
+    background-color: var(--azul);
+    border-left: 0.5rem solid var(--amarelo);
+  }
+  section dl { padding: 0 1rem; font-size: 0.8rem; }
+
+  .data { top: 1.5rem; left: 1.5rem; }
+  .weather { bottom: 1.5rem; right: 1.5rem; }
+
+  /* Pseudoelemento: ícone do clima após o título "Weather" */
+  .weather h2::after { content: " ⛅"; }
+  .weather-icon { display: none; }
+}
