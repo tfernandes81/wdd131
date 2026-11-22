@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Álbum do Templo - Filtrado</title>
+  <meta name="author" content="Tiago Fernandes">
+  <meta name="description" content="Álbum de fotos de templos da Igreja de Jesus Cristo dos Santos dos Últimos Dias ao redor do mundo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/templos_filtrados.css">
+  <link rel="stylesheet" href="estilos/templos_filtrados_grandes.css">
+  <script src="scripts/templos_dados.js" defer></script>
+  <script src="scripts/templos_filtrados.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="logo">Álbum do Templo</p>
+    <button id="menu-btn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+    <nav>
+      <ul id="menu" class="menu">
+        <li><a href="#" data-filtro="inicio">Página Inicial</a></li>
+        <li><a href="#" data-filtro="antigos">Antigo</a></li>
+        <li><a href="#" data-filtro="novos">Novo</a></li>
+        <li><a href="#" data-filtro="grandes">Grande</a></li>
+        <li><a href="#" data-filtro="pequenos">Pequeno</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="titulo">Página Inicial</h1>
+    <section id="galeria" class="galeria"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> 🚗 Tiago Fernandes 💻 Brasil</p>
+    <p id="ultima-modificacao"></p>
+  </footer>
+</body>
+</html>
