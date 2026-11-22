@@ -132,25 +132,45 @@ footer p { margin: .3rem 0; }
 }
 
 /* Cartões de templo (gerados via JavaScript) */
+:root { --rotulo: var(--azul); }
+
 .card {
   display: flex;
   flex-direction: column;
-  gap: .3rem;
-  padding: .75rem;
-  border: 1px solid #d5dde5;
-  border-radius: 6px;
-  text-align: left;
-  background: #f7fafc;
+  align-items: stretch;
+  gap: .15rem;
+  padding: 1rem;
+  border: 1px solid #d9d9d9;
+  background: #ececec;
+  text-align: center;
 }
 .card h2 {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  color: var(--azul);
+  margin: 0 0 .5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000;
 }
-.card p { margin: 0; font-size: .9rem; }
-.card p span { font-weight: 700; }
-.card img { margin-top: .4rem; min-height: 120px; background: #e3e9ef; }
+.card p {
+  margin: 0;
+  font-size: .85rem;
+  line-height: 1.35;
+}
+.card p span {
+  font-variant: small-caps;
+  font-weight: 700;
+  color: var(--rotulo);
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.1rem;
+  min-height: 120px;
+  background: #dcdcdc;
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .45);
+}
 
 nav a.ativo { background: var(--amarelo); color: var(--azul-escuro); }
 .vazio { grid-column: 1 / -1; text-align: center; }
