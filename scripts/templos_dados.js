@@ -1,74 +1,84 @@
 // Array de templos (arquivo próprio). Edite/adicione objetos aqui.
 const templos = [
   {
-    templeName: "Aba Nigéria",
-    location: "Aba, Nigéria",
-    dedicated: "2005, August, 7",
+    nomeDoTemplo: "Aba Nigeria",
+    localizacao: "Aba, Nigéria",
+    consagracao: "2005, 7 de agosto",
     area: 11500,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Aba_Nigeria_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
-    templeName: "Manti Utah",
-    location: "Manti, Utah, Estados Unidos",
-    dedicated: "1888, May, 21",
+    nomeDoTemplo: "Manti Utah",
+    localizacao: "Manti, Utah, Estados Unidos",
+    consagracao: "1888, 21 de maio",
     area: 74792,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Manti_Utah_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
-    templeName: "Payson Utah",
-    location: "Payson, Utah, Estados Unidos",
-    dedicated: "2015, June, 7",
+    nomeDoTemplo: "Payson Utah",
+    localizacao: "Payson, Utah, Estados Unidos",
+    consagracao: "2015, 7 de junho",
     area: 96630,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Payson_Utah_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
-    templeName: "Yigo Guam",
-    location: "Yigo, Guam",
-    dedicated: "2022, May, 22",
+    nomeDoTemplo: "Yigo Guam",
+    localizacao: "Yigo, Guam",
+    consagracao: "2020, 2 de maio",
     area: 6861,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Yigo_Guam_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
   },
   {
-    templeName: "Washington D.C.",
-    location: "Kensington, Maryland, Estados Unidos",
-    dedicated: "1974, November, 19",
+    nomeDoTemplo: "Washington D.C.",
+    localizacao: "Kensington, Maryland, Estados Unidos",
+    consagracao: "1974, 19 de novembro",
     area: 156558,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Washington_D.C._Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
   {
-    templeName: "Lima Peru",
-    location: "Lima, Peru",
-    dedicated: "1986, January, 10",
+    nomeDoTemplo: "Lima Peru",
+    localizacao: "Lima, Peru",
+    consagracao: "1986, 10 de janeiro",
     area: 9600,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Lima_Peru_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
   },
   {
-    templeName: "Cidade do México",
-    location: "Cidade do México, México",
-    dedicated: "1983, December, 2",
+    nomeDoTemplo: "Cidade do México, México",
+    localizacao: "Cidade do México, México",
+    consagracao: "1983, 2 de dezembro",
     area: 116642,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Mexico_City_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   // Templos adicionados
   {
-    templeName: "Salt Lake",
-    location: "Salt Lake City, Utah, Estados Unidos",
-    dedicated: "1893, April, 6",
+    nomeDoTemplo: "Salt Lake",
+    localizacao: "Salt Lake City, Utah, Estados Unidos",
+    consagracao: "1893, 6 de abril",
     area: 253015,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple.jpg?width=400"
   },
   {
-    templeName: "São Paulo Brasil",
-    location: "São Paulo, Brasil",
-    dedicated: "1978, October, 30",
+    nomeDoTemplo: "São Paulo Brasil",
+    localizacao: "São Paulo, Brasil",
+    consagracao: "1978, 30 de outubro",
     area: 59246,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Sao_Paulo_Brazil_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sao_Paulo_Brazil_Temple.jpg?width=400"
   },
   {
-    templeName: "Anchorage Alasca",
-    location: "Anchorage, Alasca, Estados Unidos",
-    dedicated: "1999, January, 9",
+    nomeDoTemplo: "Anchorage Alasca",
+    localizacao: "Anchorage, Alasca, Estados Unidos",
+    consagracao: "1999, 9 de janeiro",
     area: 11937,
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Anchorage_Alaska_Temple.jpg?width=400"
+    urlDaImagem:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Anchorage_Alaska_Temple.jpg?width=400"
   }
 ];

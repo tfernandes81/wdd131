@@ -27,7 +27,7 @@ botao.addEventListener("click", () => {
 const galeria = document.getElementById("galeria");
 const titulo = document.getElementById("titulo");
 
-const ano = (t) => parseInt(t.dedicated.split(",")[0], 10);
+const ano = (t) => parseInt(t.consagracao.split(",")[0], 10);
 
 const filtros = {
   inicio:  { titulo: "Página Inicial", testar: () => true },
@@ -48,23 +48,23 @@ function criarCartoes(lista) {
     card.className = "card";
 
     const nome = document.createElement("h2");
-    nome.textContent = t.templeName;
+    nome.textContent = t.nomeDoTemplo;
 
     const local = document.createElement("p");
-    local.innerHTML = "<span>Local:</span> ";
-    local.append(t.location);
+    local.innerHTML = "<span>Localização:</span> ";
+    local.append(t.localizacao);
 
     const data = document.createElement("p");
-    data.innerHTML = "<span>Consagração:</span> ";
-    data.append(t.dedicated);
+    data.innerHTML = "<span>Dedicado:</span> ";
+    data.append(t.consagracao);
 
     const area = document.createElement("p");
-    area.innerHTML = "<span>Área:</span> ";
+    area.innerHTML = "<span>Tamanho:</span> ";
     area.append(t.area.toLocaleString("pt-BR") + " pés quadrados");
 
     const img = document.createElement("img");
-    img.src = t.imageUrl;
-    img.alt = t.templeName;
+    img.src = t.urlDaImagem;
+    img.alt = t.nomeDoTemplo;
     img.loading = "lazy";
     img.width = 400;
     img.height = 250;
